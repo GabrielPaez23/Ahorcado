@@ -100,16 +100,6 @@ def imprimir_tablero(tablero, intentos):
 #Se imprime el tablero
     
 
-
-# def procesar(letra, palabra, tablero):
-#     if letra in palabra:
-#         actualizar_tablero(letra,palabra,tablero)
-
-
-# def actualizar_tablero(letra, palabra, tablero): 
-#     for indice, i in enumerate(palabra):
-#             if i == letra:
-#                 tablero[indice] = letra
 def procesar_letra(palabra, tablero, intentos):
 #Se hace todo el proceso de si la letra es correcta y la repeticion con un bucle
     while tablero != palabra and intentos != 0:
@@ -137,9 +127,7 @@ def procesar_letra(palabra, tablero, intentos):
 
 def run():
     palabra, tablero, intentos = iniciar_juego(diccionario)
-    #imprimir_tablero(tablero)
     procesar_letra(palabra,tablero,intentos)
-    #comprobar(tablero, intentos)
     
         
 
